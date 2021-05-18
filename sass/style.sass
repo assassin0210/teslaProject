@@ -1,10 +1,8 @@
 *
   box-sizing: border-box
-
 a
   color: #fff
   text-decoration: none  
-
 body
   background-color: #0B0B0B 
   color: #FFFFFF 
@@ -13,7 +11,6 @@ body
   /**  **/
   font-family: 'Roboto Condensed', sans-serif
   font-weight: 400
-
 .header
   height: 100vh
   position: absolute
@@ -35,22 +32,18 @@ body
     flex-direction: column
     align-items: center
     justify-content: center
-
     div
       width: 36px
       height: 2px
       background-color: #fff
-      margin: 5px 0
-      
+      margin: 5px 0      
 .container 
   padding: 0 15px
   max-width: 1230px   
-  margin: 0 auto 
-  
+  margin: 0 auto   
 .logo
   padding-top: 36px
-  margin-bottom: 29px  
-
+  margin-bottom: 29px
 .header-content 
   &__title 
     font-family: 'Roboto', sans-serif
@@ -67,12 +60,68 @@ body
     background: rgba(255, 255, 255, 0.15)
     transition: all 0.3s
   &__btn:hover
-      background-color: #770302
-.slider__item
-  height: 100vh
-  background-repeat: no-repeat
-  background-size: cover
-  background-position: center 
+      background-color: #770302     
+.slider
+  .slick-dots
+    margin: -55px auto 0
+    position: relative
+    z-index: 6
+    max-width: 1200px
+    padding: 0
+    button
+      width: 15px
+      height: 15px
+      border-radius: 50%
+      background-color: #0b0b0b
+      border: none
+      padding: 0
+      font-size: 0      
+      cursor: pointer
+      outline: none
+    li
+      list-style-type: none
+      display: inline-block
+      margin: 0 5px 
+   
+    .slick-active
+      button
+        background-color: #fff        
+  &__item
+    height: 100vh
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center 
+.statistics
+  margin: 160px 0 100px 
+  &-item
+    text-align: center
+    &__title
+      margin-bottom: 19px
+    &__num
+      font-size: 96px
+      line-height: 112px
+      margin-bottom: 7px
+      font-family: 'Roboto', sans-serif
+      &--speed        
+        span
+          display: inline-block
+          position: relative
+        span::before
+          content: '+'
+          position: absolute
+          top: -60px
+      span
+        font-size: 24px
+        line-height: 28px
+        margin-left: -20px     
+    &__descr    
+      color: #B70021  
+  &-items
+    display: flex
+    justify-content: space-around
+.images
+  margin-bottom: 100px    
+    
 
   
 
